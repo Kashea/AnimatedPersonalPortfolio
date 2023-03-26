@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class="logo">Rossrival Bendillo</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Rossrival</span><br>Bendillo from Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header Section -->
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Profile-Pic.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rem, adipisci debitis
+                        aliquam nihil ipsa illum ut veritatis necessitatibus quas in sit similique. Id dicta nesciunt
+                        officiis eveniet a laudantium voluptates odio sed consequuntur expedita perspiciatis, officia
+                        aut, deserunt, est temporibus cum ipsa voluptas at ab modi ipsam debitis enim!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Full Stack Web Developer</span><br>(Front-End)HTML, CSS, BootStrap & (Back-End)Javascript-Vanilla JS, React, Angular, Vue</li>
+                            <li><span>SEO</span><br>Search Engine Optimization</li>
+                            <li><span>App Development</span><br>Develop Mobile Applications for IOS and Androids</li>
+                            <li><span>Error Fixing</span><br>Debug and Fix coding errors</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2009-2022</span><br>Information Technology Support Associate</li>
+                            <li><span>2022-Present</span><br>SEO Together Build & Design</li>
+                            <li><span>2022-Present</span><br>Front-End & Back-End Dev Together Build & Design</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Full Stack Web Developer</span><br>KODEGO</li>
+                            <li><span>Bachelor of Science in Computer Engineering</span><br>Bulacan State University
+                            </li>
+                            <li><span>Secondary</span><br>Sto. Nino Academy</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of About Section -->
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quasi earum quia voluptatem
+                        id reiciendis quibusdam explicabo, deserunt molestias asperiores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quasi earum quia voluptatem
+                        id reiciendis quibusdam explicabo, deserunt molestias asperiores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-searchengin"></i>
+                    <h2>SEO</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quasi earum quia voluptatem
+                        id reiciendis quibusdam explicabo, deserunt molestias asperiores.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Services Section -->
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail01.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail02.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail03.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail04.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail05.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail06.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail07.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbs.jfif" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail09.jpg" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Portfolio Thumbnails/thumbnail10.jpg" alt="web-thumbnail">
+                    <div class="layer">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Kashea?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/6b50901590.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
