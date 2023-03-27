@@ -16,13 +16,15 @@
         <div class="container">
             <nav>
                 <h3 class="logo">Rossrival Bendillo</h3>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Full Stack Web Developer</p>
@@ -55,11 +57,12 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web Interfaces</li>
-                            <li><span>Full Stack Web Developer</span><br>(Front-End)HTML, CSS, BootStrap & (Back-End)Javascript-Vanilla JS, React, Angular, Vue</li>
+                            <li><span>Full Stack Web Developer</span><br>(Front-End)HTML, CSS, BootStrap &
+                                (Back-End)Javascript-Vanilla JS, React, Angular, Vue</li>
                             <li><span>SEO</span><br>Search Engine Optimization</li>
                             <li><span>App Development</span><br>Develop Mobile Applications for IOS and Androids</li>
                             <li><span>Error Fixing</span><br>Debug and Fix coding errors</li>
-                            
+
                         </ul>
                     </div>
 
@@ -206,6 +209,46 @@
         </div>
     </div>
 
+    <!-- End of Portfolio Section -->
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Get in Touch</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>camrynchelsea01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+639952801191</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rossrival-bendillo-96248b77/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Kashea" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://codepen.io/Rossrival-Bendillo" target="_blank"><i
+                                class="fa-brands fa-codepen"></i></a>
+                        <a href="https://www.figma.com/files/user/1174246213144073854?fuid=1174246213144073854"
+                            target="_blank"><i class="fa-brands fa-figma"></i></a>
+                    </div>
+                    <a href="https://kashea.github.io/PersonalPortfolioRoss/" download target="_blank"
+                        class="btn btn2">Download
+                        CV</a>
+                </div>
+                <div class="contact right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" id="" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Rossrival Bendillo <i class="fa-solid fa-heart"></i> 2023</p>
+        </div>
+    </div>
+
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -222,6 +265,37 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLj_HgXqZG6Rmy2j0_hJYJPMt0jJUsc2uTGZm0eZsgYlLDjwTTjGe-9rGCl5bVdugQvw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
     <script src="https://kit.fontawesome.com/6b50901590.js" crossorigin="anonymous"></script>
 </body>
 
