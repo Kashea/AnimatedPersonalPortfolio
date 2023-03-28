@@ -257,14 +257,23 @@ nav ul li a:hover::after {
 .layer a {
     font-weight: 500;
     margin-bottom: 20px;
-    color: #ff004f;
+    color: #ababab;
+    font-size: 10px;
     text-decoration: none;
     line-height: 60px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    border: #ababab;
     background: #fff;
     border-radius: 50%;
 }
+
+.layer a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
 
 .layer a i {
     font-size: 20px;
@@ -465,3 +474,5 @@ nav .fa-solid {
     margin-top: -10px;
     display: block;
 }
+
+/* https://www.youtube.com/watch?v=0YFrGy_mzjY */
